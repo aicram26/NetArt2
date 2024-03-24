@@ -1,0 +1,380 @@
+/*
+CSS RESETS:
+ Border box reset:
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ 62.5% Fix: https: //www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/
+*/
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+ }
+ 
+ 
+ *,
+ *:before,
+ *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ 
+ html,
+ body {
+    height: 100%;
+
+    /*background-color: #1256B9;*/
+background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+background-size: 400% 400%;    
+animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+   font-size:2.5rem;
+   line-height:1.6;
+   font-family:"Montserrat Alternates", sans-serif;
+   
+}
+#first {
+   text-align:center;
+   color:#ffffff;
+}
+#subt {
+   text-align:center;
+   color:#ffffff;
+}
+
+#text-1  {
+   font-family:"Montserrat Alternates", sans-serif; 
+   top:20%;
+   left:30%;
+   transform: translate(-50%, -10%);
+}
+
+.hidden {
+   visibility: hidden;
+}
+.talk-bubble round left-in {
+   position: center;
+   top: 20%; 
+   left: 20%; 
+}
+
+.talk-bubble round right-in {
+   position: center;
+   top: 20%; 
+   left: 20%; 
+   /* transform: translate(-50%,-50%); */
+}
+/* CSS talk bubble */
+.talk-bubble {
+	margin: 80px;
+  display: inline-block;
+  position: relative;
+	width: 200px;
+	height: auto;
+	background-color: rgb(255, 255, 255);
+}
+.border{
+  border: 8px solid #ffffff;
+}
+.round{
+  border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+
+}
+
+
+/* Right triangle, left side slightly down */
+.round.border.btm-left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+   left: 30px;
+	right: auto;
+   top: auto;
+	bottom: -40px;
+	border: 20px solid;
+   border-color: #fff #fff transparent transparent; 
+}
+.round.border.btm-left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+   left: 38px;
+	right: auto;
+   top: auto;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: rgb(255, 255, 255) rgb(255, 255, 255) transparent transparent; 
+}
+
+/* talk bubble contents */
+.talk-bubble border round btm-left-in{
+   padding: 1em;
+    text-align: center;
+   line-height: 1.5em;
+ }
+ .talk-bubble border round btm-left-in p{
+   /* remove webkit p margins */
+   -webkit-margin-before: 0em;
+   -webkit-margin-after: 0em;
+ }
+
+
+ .round.border.btm-right-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 30px;
+   /* top: auto; */
+	bottom: -40px;
+	border: 20px solid;
+   border-color: #fff #fff transparent transparent; 
+}
+.round.border.btm-right-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 38px;
+  top: auto;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: rgb(255, 255, 255) rgb(255, 255, 255) transparent transparent; 
+}
+
+/* talk bubble contents */
+.talk-bubble border round btm-right-in{
+   padding: 1em;
+    text-align: center;
+   line-height: 1.5em;
+ }
+ .talk-bubble border round btm-right-in p{
+   /* remove webkit p margins */
+   -webkit-margin-before: 0em;
+   -webkit-margin-after: 0em;
+ }
+
+ #text-2, #text-4 {
+   font-family: "Sedgwick Ave", cursive;
+   Color:rgb(252, 186, 2);
+  
+   top:50%;
+   left:50%;
+   transform: translate(-50%, -50%);
+ }
+
+ #text-3  {
+   font-family:"Montserrat Alternates", sans-serif; 
+   top:20%;
+   left:30%;
+   transform: translate(-50%, -550%);
+}
+
+ #text-4 {
+   font-family: "Sedgwick Ave", cursive;
+   Color:rgb(22, 114, 171);
+   top:50%;
+   left:50%;
+   transform: translate(-50%, -450%);
+ }
+
+ #text-5  {
+   font-family:"Montserrat Alternates", sans-serif; 
+   top:20%;
+   left:30%;
+   transform: translate(-50%, -950%);
+}
+
+#text-6 {
+   font-family: "Sedgwick Ave", cursive;
+   Color:rgb(22, 114, 171);
+  
+   top:50%;
+   left:50%;
+   transform: translate(-50%, -850%);
+ }
+
+ #text-7  {
+   font-family: "Climate Crisis", sans-serif; 
+   top:20%;
+   left:30%;
+   transform: translate(-50%, -1350%);
+}
+
+#text-8 {
+  font-family: "Sedgwick Ave", cursive;
+   Color:rgb(255, 0, 0);
+  
+   top:50%;
+   left:50%;
+   transform: translate(-50%, -1350%);
+ }
+
+ #text-9  {
+   font-family:"Montserrat Alternates", sans-serif; 
+   top:20%;
+   left:30%;
+   transform: translate(-50%, -650%);
+}
+
+#text-10 {
+   font-family: "Sedgwick Ave", cursive;
+    Color:rgb(22, 114, 171);
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-2050%);
+  }
+
+  .image-div{
+   display: inline-block;
+   max-width: 100%;
+   position: relative;
+}
+.hidden {
+   visibility: hidden;
+}
+  #img-clock {
+   top:20%;
+   left:50%;
+   transform: translate(-50%, -1650%);
+   max-width:100% ;
+   /* animation-timing-function: steps(5, end); */
+  }
+
+  #text-11  {
+   font-family:"Montserrat Alternates", sans-serif;
+   top:20%;
+   left:30%;
+   transform: translate(-50%,-3050%);
+}
+
+#text-12 {
+   font-family: "Sedgwick Ave", cursive;
+    Color:rgb(22, 114, 171);
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-3050%);
+  }
+
+  #text-13  {
+   font-family:"Montserrat Alternates", sans-serif;
+   top:20%;
+   left:30%;
+   transform: translate(-50%,-3550%);
+}
+
+#text-14 {
+   font-family: "Sedgwick Ave", cursive;
+    Color:rgb(22, 114, 171);
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-3550%);
+  }
+
+
+  #text-15  {
+   font-family:"Montserrat Alternates", sans-serif;
+   top:20%;
+   left:30%;
+   transform: translate(-50%,-4050%);
+}
+
+#text-16 {
+   font-family: "Sedgwick Ave", cursive;
+    Color:rgb(22, 114, 171);
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-4050%);
+  }
+
+  #text-17  {
+   font-family:"Montserrat Alternates", sans-serif;
+   top:20%;
+   left:30%;
+   transform: translate(-50%,-2650%);
+}
+
+#text-18 {
+   font-family: "Sedgwick Ave", cursive;
+    Color:rgb(22, 114, 171);
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-4550%);
+  }
+
+  #text-19  {
+   font-family:"Montserrat Alternates", sans-serif;
+   top:20%;
+   left:30%;
+   transform: translate(-50%,-880%);
+}
+
+#text-20 {
+   font-family: "Sedgwick Ave", cursive;
+    Color:rgb(22, 114, 171);
+    top:50%;
+    left:50%;
+    transform: translate(-30%,-3480%);
+   
+  }
+  .clearfix {
+   overflow: auto;
+ }
+  #post-it {
+   top:20%;
+   left:50%;
+   position:relative;
+     transform: translate(-30%,-605%);
+   max-width:50% ;
+  }
+
+ 
+  #text-21  {
+   font-family:"Montserrat Alternates", sans-serif;
+   top:20%;
+   left:30%;
+   transform: translate(-50%,-4250%);
+}
+
+#text-22  {
+   font-family:"Montserrat Alternates", sans-serif;
+   top:20%;
+   left:30%;
+   transform: translate(-50%,-3040%);
+}
+#text-23 {
+   font-family: "Sedgwick Ave", cursive;
+    Color:rgb(22, 114, 171);
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-4550%);
+  }
+
+  #text-24  {
+   font-family:"Montserrat Alternates", sans-serif;
+   top:20%;
+   left:30%;
+   transform: translate(-50%,-5040%);
+}
